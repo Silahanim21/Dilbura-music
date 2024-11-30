@@ -132,6 +132,9 @@ TELEGRAM_VIDEO_URL = getenv(
     "TELEGRAM_VIDEO_URL", "https://envs.sh/YsA.jpg"
 )
 
+YOUTUBE_IMG_URL = "https://telegra.ph/Eski-11-29"
+)
+
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL", "https://envs.sh/YsA.jpg"
 )
