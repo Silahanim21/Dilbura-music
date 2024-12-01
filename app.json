@@ -24,7 +24,11 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "8051820285:AAHoHqm7FZ2anjpDg2V_LhA9XKtTjTvTXVY",
+        "value": "8051820285:AAHoHqm7FZ2anjpDg2V_LhA9XKtTjTvTXVY",      "required": false
+      },
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/Silahanim21/KUMSAL-MUS-C",
         "required": true
       },
       "MONGO_DB_URI": {
