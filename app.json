@@ -1,50 +1,45 @@
 {
-    "name": "Alexa Music",
-    "description": "Deploy Alexa music on railwey make sure to star the projecte.",
-    "logo": "https://telegra.ph/file/ba967503682a55beaedd3.png",
+    "name": "⛦ 𝐁𝐫𝐚𝐧𝐝𝐫𝐝 𝐗 𝐌𝐮𝐬𝐢𝐜 ⛦",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://te.legra.ph/file/62fa7c81c56c1ae31c844.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Alexa",
-    "alexamusic",
-    "alexamusicbot",
+    "Brandrd",
+    "MusicBot",
+    "telegram-bot",
     "pyrogram"
     ],
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "28217326",
+        "value": "20824282",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "4800b862b4094e96f42a0b5dc2a558f8",
+        "value": "5c49d99b5bb9e41c9b8ada4f826989ef",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "7592125217:AAGpFCI9if3xNwcydqraXhMhcYR3ZWqoocE",
+        "value": "8051820285:AAHoHqm7FZ2anjpDg2V_LhA9XKtTjTvTXVY",
         "required": true
       },
-      "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "7477017395",
-        "required": true
-      },        
       "MONGO_DB_URI": {
-        "description": "Mongo DB URL",
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
         "value": "mongodb+srv://kurt67143:DLArCT171SF9wRKJ@alexsoza.xpoqv.mongodb.net/?retryWrites=true&w=majority&appName=Alexsoza",
         "required": true
       },
-      "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot.",
-        "value": "botmusic",
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "7663718117",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
-        "value": "BAE6FqgAamrO6hJnBrgFeVF2eV1JkmGp-1Brk9PJFyKuigC45aDLHNX9h9zfviVqrWEPqUH0AWE19ePakIt8mUeI-1PLFEO0Hn1unbQu9SoVFFpeaTUEf0guwL5ov9Y6pz6h92fd44yUNKND5iTZR7IdkmkHtcgJo3Psihna_8n-hp_CFD7LwJKqwJ0xF0FNValeDbS-oGrQ2IevKEZgfqGBc8ZYgvfHV5ql7QQB_DMpVmWEbJ8rwEn861R9FPGxUX4DZdEGXOyk-VJI8u3kjI_Md9VQ6eukTz95NMPucfg2QU1GyZlD89XJz5OIV70mge17ybmZEmRBxNbO17sLFTH5KStX-wAAAAG9qjszAA",
+        "description": "A Pyrogram v2 String Session from @BRANDEDSTRINGSESSION_BOT on Telegram.",
+        "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -57,20 +52,10 @@
         "value": "",
         "required": false
       },
-      "UPSTREAM_REPO": {
-        "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Silahanim21/KUMSAL-MUS-C",
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Don't Add Channel's ID.",
+        "value": "-1002256136144",
         "required": true
-      },
-      "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1002422638645",
-        "required": true
-      },
-      "EXTRA_PLUGINS": {
-        "description": "if You want to load extra plugins with music plugins so fill True  if you don't want to load extra plugins so Fill False",
-        "value": "True",
-        "required": false
       }
     },
     "buildpacks": [
@@ -78,7 +63,10 @@
               "url": "heroku/python"
           },
           {
-              "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview.git"
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
       "stack": "container"
